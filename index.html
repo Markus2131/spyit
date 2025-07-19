@@ -157,22 +157,26 @@
     <span class="close" onclick="closePrivacyPopup()">&times;</span>
     <h2>Внимание посетитель</h2>
     <p>Этот сайт не принадлежит никакой компании - он создан как шаблон для продажи, компанией SPY-IT. Ведущая компания по разработке мобильных приложений и разработке сайтов, ПО и многое другое. На сайте отсутствует полный функционал,так как он создан в ознакомительных целях для наших клиентов.<br>. Спасибо что посетили наш сайт - нажмите на крестик чтоб закрыть окно.</p>
+  <audio id="myAudio" src="/img/company_spy_it05.mp3"></audio>
   </div>
 </div> 
 </script>
 <!--Скрипты для окна конфидециальности-->
 <script>// Получаем элементы
+var audio = document.getElementById("myAudio");    
 var privacyButton = document.getElementById("privacyButton");
 var privacyPopup = document.getElementById("privacyPopup");
 
 // Функция для открытия всплывающего окна
 function openPrivacyPopup() {
   privacyPopup.style.display = "block";
+  audio.play();  
 }
 
 // Функция для закрытия всплывающего окна
 function closePrivacyPopup() {
   privacyPopup.style.display = "none";
+  audio.play();  
 }
 
 // Обработчик клика на кнопку
