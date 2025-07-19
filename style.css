@@ -13,13 +13,13 @@ body{
 
 /*Стили для адаптации под мобильные устройства*/
 
- @media (max-width: 768px) {
+ @media (max-width: 368px) {
       /* Стили для мобильных устройств */
       body {
         font-size: 14px;
       }
       .container {
-        width: 95%;
+        width: 25%;
       }
     }
 
