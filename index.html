@@ -151,13 +151,13 @@
         </div>
 
         <!--Окно КОНФИДЕЦИАЛЬНОСТИ-->
-        <button id="privacyButton" class="sdvig-script"></button>    
+        <button id="privacyButton" class="sdvig-script"><audio src="./img/company_spy_it05.mp3" autoplay id="myAudio"></audio></button>    
         <div id="privacyPopup" class="popup">
   <div class="popup-content">
     <span class="close" onclick="closePrivacyPopup()">&times;</span>
     <h2>Внимание посетитель</h2>
     <p>Этот сайт не принадлежит никакой компании - он создан как шаблон для продажи, компанией SPY-IT. Ведущая компания по разработке мобильных приложений и разработке сайтов, ПО и многое другое. На сайте отсутствует полный функционал,так как он создан в ознакомительных целях для наших клиентов.<br>. Спасибо что посетили наш сайт - нажмите на крестик чтоб закрыть окно.</p>
-  <audio id="myAudio" src="../img/company_spy_it05.mp3"></audio>
+  <audio id="myAudio" src="./img/company_spy_it05.mp3"></audio>
   </div>
 </div> 
 </script>
@@ -186,6 +186,7 @@ privacyButton.addEventListener("click", openPrivacyPopup);
 window.onclick = function(event) {
   if (event.target == privacyPopup) {
     closePrivacyPopup();
+    audio.play();
   }
 }
 </script> 
