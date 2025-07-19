@@ -91,7 +91,7 @@ popup {
 /*Таблица стилей для тега и комплектующих тегов , тега Header*/
 
 .bg{
-    background-image: url(./img/backgroundhead.png);
+    background-image: url(./img/bg.png);
     background-size: 100%;
     margin: 0 auto;
     padding: 0;
